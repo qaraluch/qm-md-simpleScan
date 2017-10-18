@@ -1,8 +1,8 @@
 {
-  "name": "XXX",
-  "homepage": "https://github.com/qaraluch/XXX",
-  "version": "0.0.1",
-  "description": "YYY",
+  "name": "qm-md-simplescan",
+  "homepage": "https://github.com/qaraluch/qm-md-simpleScan",
+  "version": "0.1.0",
+  "description": "Utility for parsing some info form markdown files.",
   "license": "MIT",
   "author": {
     "name": "qaraluch",
@@ -11,9 +11,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/qaraluch/XXX.git"
+    "url": "https://github.com/qaraluch/qm-md-simpleScan.git"
   },
-  "files": ["dist/", "src/"],
+  "files": [
+    "dist/",
+    "src/"
+  ],
   "main": "./dist/index.js",
   "module": "./src/index.js",
   "scripts": {
@@ -37,24 +40,30 @@
         }
       ]
     ],
-    "plugins": ["transform-runtime"]
+    "plugins": [
+      "transform-runtime"
+    ]
   },
   "ava": {
-    "require": ["babel-register"],
+    "require": [
+      "babel-register"
+    ],
     "babel": "inherit"
   },
   "devDependencies": {
-    "babel-cli": "0.0.1",
-    "ava": "0.0.1",
-    "babel-register": "0.0.1",
-    "babel-preset-env": "0.0.1",
-    "babel-plugin-transform-runtime": "0.0.1",
-    "eslint": "0.0.1",
-    "eslint-plugin-import": "0.0.1",
-    "babel-eslint": "0.0.1",
-    "prettier": "0.0.1"
+    "babel-cli": "6.26.0",
+    "ava": "0.22.0",
+    "babel-register": "6.26.0",
+    "babel-preset-env": "1.6.1",
+    "babel-plugin-transform-runtime": "6.23.0",
+    "eslint": "4.9.0",
+    "eslint-plugin-import": "2.7.0",
+    "babel-eslint": "8.0.1",
+    "prettier": "1.7.4"
   },
   "dependencies": {
-    "babel-runtime": "0.0.1"
+    "babel-runtime": "6.26.0",
+    "qm-fp": "0.1.1",
+    "qm-rgx-mdheader": "0.1.0"
   }
 }
